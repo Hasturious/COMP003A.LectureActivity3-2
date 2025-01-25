@@ -9,7 +9,19 @@ namespace COMP003A.LectureActivity3_2
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            Console.WriteLine("Welcome to the Iterative Statements Demo\n");
+            //prompt for a postive interget
+            int num; 
+            Console.Write("Enter a postive interger to generate its multiplaction table: ");
+            num = int.Parse(Console.ReadLine());
+
+            Console.WriteLine($"Multiplaction Table for {num}");
+            //
+            for (int i = 0; i <= 10; i++)
+            {
+                //
+                Console.WriteLine($"{i} x {num} = {i * num}");
+            }
         }
     }
 }
