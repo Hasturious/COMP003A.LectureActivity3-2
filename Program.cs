@@ -22,6 +22,14 @@ namespace COMP003A.LectureActivity3_2
                 //
                 Console.WriteLine($"{i} x {num} = {i * num}");
             }
+            //
+            Console.WriteLine("\nReversed Multiplacation Table:");
+            int reverse = 10; //start at 10
+            //loop and generate multiplacation in reverse
+            while (reverse > 0)
+            {
+                Console.WriteLine($"{reverse} x {num} = {reverse * num}");
+            }
         }
     }
 }
