@@ -29,6 +29,8 @@ namespace COMP003A.LectureActivity3_2
             while (reverse > 0)
             {
                 Console.WriteLine($"{reverse} x {num} = {reverse * num}");
+                // decrement the reverse
+                reverse--;
             }
         }
     }
