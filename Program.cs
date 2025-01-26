@@ -33,7 +33,7 @@ namespace COMP003A.LectureActivity3_2
                 reverse--;
             }
             //Fibonacci sequence with a do while loop
-            /*
+            
             Console.WriteLine("\nFibonacci Series:");
             int firstNumber = 0, secondNumber = 1, nextNumber;
             Console.Write($"{firstNumber} {secondNumber} ");
@@ -41,8 +41,11 @@ namespace COMP003A.LectureActivity3_2
 
             do
             {
-            }
-            */
+                nextNumber = firstNumber + secondNumber;
+                Console.WriteLine($"{nextNumber} ");
+                firstNumber = secondNumber;
+                count ++
+            } while (count > 10);
         }
     }
 }
