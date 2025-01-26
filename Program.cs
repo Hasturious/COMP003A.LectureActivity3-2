@@ -32,6 +32,17 @@ namespace COMP003A.LectureActivity3_2
                 // decrement the reverse
                 reverse--;
             }
+            //Fibonacci sequence with a do while loop
+            /*
+            Console.WriteLine("\nFibonacci Series:");
+            int firstNumber = 0, secondNumber = 1, nextNumber;
+            Console.Write($"{firstNumber} {secondNumber} ");
+            int count = 2;
+
+            do
+            {
+            }
+            */
         }
     }
 }
