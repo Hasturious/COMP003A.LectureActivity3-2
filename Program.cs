@@ -11,7 +11,7 @@ namespace COMP003A.LectureActivity3_2
         {
             Console.WriteLine("Welcome to the Iterative Statements Demo\n");
             //prompt for a postive interget
-            int num; 
+            int num;
             Console.Write("Enter a postive interger to generate its multiplaction table: ");
             num = int.Parse(Console.ReadLine());
 
@@ -33,19 +33,33 @@ namespace COMP003A.LectureActivity3_2
                 reverse--;
             }
             //Fibonacci sequence with a do while loop
-            
+
             Console.WriteLine("\nFibonacci Series:");
             int firstNumber = 0, secondNumber = 1, nextNumber;
             Console.Write($"{firstNumber} {secondNumber} ");
             int count = 2;
-
+            //
             do
             {
                 nextNumber = firstNumber + secondNumber;
-                Console.WriteLine($"{nextNumber} ");
+                Console.Write($"{nextNumber} ");
                 firstNumber = secondNumber;
-                count ++
-            } while (count > 10);
+                secondNumber = nextNumber;
+                count++;
+            } while (count < 10);
+
+            //display fruits with a for each loop
+            //An array of fruit
+            string[] fruits = { "Apple", "Banana", "Pear", "Strawberry" };
+
+            Console.WriteLine("\n");
+            //display each fruit using for each loop
+            Console.WriteLine("Your favorite fruits are:");
+            //loop through each fruit in the array
+            foreach (string fruit in fruits)
+            {
+                Console.WriteLine($"- {fruit}");
+            }
         }
     }
 }
